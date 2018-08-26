@@ -1,0 +1,4 @@
+﻿{
+    "connectionString": "mongodb://localhost/replican-ta",
+    "secret": "THIS IS AN EXAMPLE SECRET KEY"
+}
