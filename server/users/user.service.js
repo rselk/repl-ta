@@ -6,7 +6,6 @@ const User = db.User;
 
 module.exports = {
     authenticate,
-    getAll,
     getById,
     create,
     update,

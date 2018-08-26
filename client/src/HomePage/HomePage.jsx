@@ -5,17 +5,13 @@ import { connect } from 'react-redux';
 import { userActions } from '../_actions';
 
 class HomePage extends React.Component {
-    componentDidMount() {
-        this.props.dispatch(userActions.getAll());
-    }
-
     render() {
         const { user, users } = this.props;
         return (
             <div className="col-md-6 col-md-offset-3">
                 <h1>Hello {user.firstName} {user.lastName}</h1>
 
-                {users.error && <span className="text-danger">ERROR: {users.error}</span>}
+
                 <p>
                     <Link to="/login">Logout</Link>
                 </p>
